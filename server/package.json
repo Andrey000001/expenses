@@ -2,8 +2,9 @@
   "name": "server",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +17,18 @@
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "helmet": "^8.1.0",
-    "jsonwebtoken": "^9.0.3"
+    "jsonwebtoken": "^9.0.3",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^25.6.0",
+    "nodemon": "^3.1.14",
+    "prisma": "^7.7.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.2"
   }
 }
