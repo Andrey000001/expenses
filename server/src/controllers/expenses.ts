@@ -65,7 +65,7 @@ export const deleteTransaction = async(req: Request ,res: Response) => {
          await prisma.expense.delete({where: {id: Number(idTransaction)}})
          return res.status(200).json({message: 'Deleted successfully'})
     } catch (error) {
-        return res.status(500).json({message: `Something went wrong ,${error});
-        }`})
+        return res.status(500).json({message: `Something went wrong ,${error});}`
+        })
     }
 }
