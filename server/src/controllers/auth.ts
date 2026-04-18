@@ -52,7 +52,7 @@ try {
     if(!currentPassword) {
         return res.status(400).json({message: 'The password is not correct'})
     }
-    const token = jwt.sign({userId :user.id ,email: user.email, name: user.name} , process.env.SECRET! ,{expiresIn: '1h'})
+    const token = jwt.sign({id :user.id ,email: user.email, name: user.name} , process.env.SECRET! ,{expiresIn: '1h'})
     
     return res.status(200).json({id :user.id ,email: user.email, name: user.name, token})
 
